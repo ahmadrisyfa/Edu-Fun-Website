@@ -15,7 +15,9 @@
                 <!-- <img src="logo.png" alt="EduFun Logo" style="height: 40px;"> -->
                  <b>
                     <h1 style="font-family:Tahoma, Geneva, Verdana, sans-serif;font-weight:bold">
-                        EduFun
+                        {{-- EduFun --}}
+                        <img src="{{ asset('img/d-removebg-preview.png') }}" alt="" style="width: 100px">
+
                     </h1>
                  </b>
             </a>
@@ -33,7 +35,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
                             <li><a class="dropdown-item" href="{{ url('category/Data Science') }}">Data Science</a></li>
-                            <li><a class="dropdown-item" href="{{ url('category/Software Engineering') }}">Software Engineering</a></li>
+                            <li><a class="dropdown-item" href="{{ url('category/Network Security') }}">Network Security</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" style="padding-right:30px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;color:black">
