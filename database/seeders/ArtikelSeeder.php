@@ -23,6 +23,7 @@ class ArtikelSeeder extends Seeder
                 'deskripsi' => $faker->paragraph,
                 'writers_id' => $faker->numberBetween(1, 10), // Sesuaikan dengan jumlah data di tabel writers
                 'category' => $faker->randomElement(['Data Science', 'Software Engineering']),
+                'view' => 0,
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

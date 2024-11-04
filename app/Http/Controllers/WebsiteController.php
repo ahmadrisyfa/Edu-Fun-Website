@@ -23,6 +23,7 @@ class WebsiteController extends Controller
     public function artikel_detail($id)
     {
         $data = Artikel::where('id',$id)->first();
+        $data->increment('view');
         return view('website.artikel_detail',compact('data'));
     }
 
@@ -46,7 +47,8 @@ class WebsiteController extends Controller
 
     public function popular()
     {
-        $data = Artikel::paginate(3);
+        $data = Artikel::orderBy('view', 'desc')->paginate(3);
+
         return view('website.popular', compact('data'));
     }
 }

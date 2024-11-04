@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('deskripsi');
             $table->unsignedBigInteger('writers_id');
             $table->enum('category', ['Data Science', 'Software Engineering']);
+            $table->integer('view');
 
             $table->timestamps();
 
